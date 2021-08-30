@@ -1,0 +1,105 @@
+<html>
+<title>Generador de Frases de Nenecho</title>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="prev.jpg" />
+	<link rel="stylesheet" href="m.css" />
+	<script language="javascript">
+var r = []
+var tex = [
+"La gente está cansada del Partido Colorado corrupto. Ese partido no me representa. A mí me representa el Partido Colorado de Tony Apuril, Cynthia Tarragó y Tabacalera del Este.",
+"Debemos cambiar la política basada en colorado o azul y pensar en la nueva política: Colorado con Lila de Johana Ortega y el celestito de Hagamos.",
+"A mí nadie me va a marcar mi hoja de ruta!!! Primero es la Muni, después la Presidencia, y me retiro en Banco Basa",
+"No crucifiquen al Partido Colorado por los corruptos. El Partido no tiene la culpa de ser una asociacion de criminales. Crucifiquenle mejor a los zurdos que quieren usar bicicletas en nuestra ciudad... HDP!!!",
+"Me presento como Candidato porque la ciudadanía asuncena está cansada de la mafia, del bandidaje... que mbore son, no nos van a ganar esa ciudadania de mierda!!",
+"Voy a trabajar por crear la Asunción que nos merecemos: con un puente de 4 carriles para ir a mirarla pudrirse desde nuestro barrio privado en Chaco'i!!",
+"Los millonarios BONOS de la Muni usamos para reparar Av Molas López: una bono de dulce de leche en cada bache para tener el raudal más sabroso!!",
+"En mi administración entraron sólo 20 funcionarios más!! Les juro, no entraron más los otros 500 operadores politicos que contratamos, necesitamos un nuevo edificio",
+"Nakayama no maneja ningún dato de la Municipalidad, eso me di cuenta. Nosotros sabemos todo de la Muni, hasta el último guaraní de ampliación presupuestaria que usamos para nuestra campaña.",
+"La Muni de Asu es la única en el mundo que no tiene un servicio tercerizado de basura!!! Nosotros mismos llevamos a Cateura para que su olor inspire a los estudiantes de la Universidad Católica",
+"¡Que lindo sería ver el cielo de Asunción despejado sin cables! ¿Verdad? Vamos a hablar con la ANDE... <BR><BR> ... para que corte sus cables y les deje sin luz a los ZURDOS PUTOS Q NO LE GUSTAN NUESTROS CABLES",
+"Desde la Municipalidad, estamos negociando la compra de 500 mil dosis de la vacuna Sputnik para donarlas al Ministerio de la Bolaterapia más grande que dije en mi puta vida JAJA MUERANSE DE COVID",
+"Soy víctima de una campaña de DESPRESTIGIO de parte de grupos poderosos. Buscan que la gente me llame con el apodo pelotudo 'Nenecho'.. y que me relacionen equivocadamente con ese que pobre imbecil que anunció la pintura de Eusebio Ayala como si fuera TIMES SQUARE",
+"En la interna colorada nos llegaron denuncias de COMPRA DE VOTO a favor del candidato opositor.<BR><BR>Estaremos investigando con Bonzi a los poseedores de las cedulas para solicitar la devolucion del 100 mil'i carajo ladrones sin lealtad!!!",
+"Estoy practicamente en situación de calle. Imaginate, tengo que alquilar esta porqueria, no es que tengo vivienda propia como los demás correligionarios que en 1 año de gobierno ya compran para su mansión.",
+"Los medios de comunicación tergiversan nuestras obras!!! Que desgraciados. Es falso que usamos los bonos para esta obra fantasma. Usamos tus impuestos. ",
+"El acelerado crecimiento de mi patrimonio no se debe a la Municipalidad!!! El dinero proviene de la compra de mi pase, voy a jugar en el Club Libertad durante esta temporada!!"
+]
+var img = [
+"https://media.ultimahora.com/p/7027d8d0e3fc04e95b01bd1ca6b6d802/adjuntos/161/imagenes/000/086/0000086597/el-senador-electo-el-partido-hagamos-tony-apuril-foto-gentileza.jpg",
+"https://hagamos.org.py/assets/img/logo-sonrisa.png",
+"https://www.hoy.com.py/imagenes/ZSKYjqlxVgv1h8LtmhB9WF8UzkuILPmvDVq1qTCA3kM/basa.jpg",
+"https://www.asuncion.gov.py/wp-content/uploads/2019/01/bad6f560-7116-4ecc-a191-4c8aa614740a.jpg",
+"https://okdiario.com/img/2019/10/06/mafia-siciliana.jpg",
+"https://www.abc.com.py/resizer/l8ZyLozJoXuVkudFoy5v92rN8ss=/fit-in/770x495/smart/arc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com/public/VSAFBYICUFC4VIP47JU3DMG7BY.jpg",
+"https://www.superseis.com.py/images/thumbs/0209625.jpeg",
+"https://www.asuncion.gov.py/wp-content/uploads/2015/12/160908-004-770x508.jpg",
+"https://www.lanacion.com.py/resizer/XiultNvJbqfepKAnJP3fdCk1NKI=/1016x0/smart/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/ZIB46CEIIFGAHBHHCLKLEZJGY4.jpg",
+"https://www.abc.com.py/resizer/k7ZwHn3TkLqmW9Zr4QpkBVAX_uI=/fit-in/770x495/smart/cloudfront-us-east-1.images.arcpublishing.com/abccolor/RRR75IFHU5FI7PYFEN2ANJFRLA.jpg",
+"https://mandua.cdn1.dattamax.com/userfiles/images/galerias/infra-33.jpg",
+"https://www.lanacion.com.py/resizer/gyoh1GapAQBjlFCBRFMTuO76OO8=/900x554/smart/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/LSVM5EJCLRH5JAMF3BBS6KXTVE.jpg",
+"https://www.asuncion.gov.py/wp-content/uploads/2020/06/08dfab54-3c19-43ff-acd5-5940fd3464c8-770x608.jpeg",
+"https://www.lanacion.com.py/resizer/cjdC3AaGRh-M4dgIU9ycxwQtD4g=/818x583/smart/filters:format(jpg):quality(70)/arc-anglerfish-arc2-prod-lanacionpy.s3.amazonaws.com/public/BYWZIELVDJAL7DUYOLAXWENIFA.jpg",
+"https://www.abc.com.py/resizer/oJ6RtAVVnHqFn9ZL40AuEInAWFk=/fit-in/770x495/smart/cloudfront-us-east-1.images.arcpublishing.com/abccolor/ZH4QHHARTVD5REQUPDHW5VTYCY.jpg",
+"https://www.abc.com.py/resizer/HrIi3hFEJ2-kTtVIZh99uolVi20=/fit-in/770x495/smart/cloudfront-us-east-1.images.arcpublishing.com/abccolor/XHHTJQR2AFE27LLT3HN6F6PF2Y.jpg",
+"https://todosobrecamisetas.com/wp-content/uploads/camisetas-club-libertad-2020-4.jpg"
+]
+
+
+function geti(){
+
+	if (r.length==tex.length) r = [];
+	var i = Math.floor(Math.random() * tex.length);
+
+	if (r.indexOf(i)!=-1) {
+		return geti();
+	} else {
+		r.push( i );
+		return i;
+	}	
+}
+
+function cambiar(){
+	var i = geti();
+	document.getElementById('tweetTextOutput').innerHTML = tex[i];
+	document.getElementById('f').src = img[i];
+}
+	</script>
+</head>
+
+<body style="font-family:Arial" class="m-0 p-0">
+
+<div class="bg-red-100">
+	<h1 class="px-5 xs:text-xl lg:text-4xl font-bold text-center py-5">
+	Generador de Frases de Nenecho <span class="hidden sm:inline">al azar</span></h1>
+
+	<div class="my-3 text-center">
+		<span class="text-white bg-red-600 hover:bg-red-400 text-sm shadow-lg  px-5 py-3 mt-4 rounded-lg cursor-pointer transition duration-500 ease-in-out select-none" onclick="cambiar()">¡Click para Frase de Nenecho al azar!</span>
+	</div>
+	
+	<br/>	
+</div>
+
+<br/>
+
+<div class="max-w-md mx-auto px-5">
+	<div class="flex justify-start">
+		<div><img src="https://pbs.twimg.com/profile_images/1422267043336888323/cgDhM73X_400x400.jpg" width="49" height="49" class="rounded-full h-12 w-12 " /></div>
+		<div class="px-3">
+			<div><b>Nenecho Rodrigues</b></div>
+			<div style="color:#666666">@nenechompy</div>
+		</div>
+	</div>
+	<div class="mt-4 text-2xl" style="font-family:'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif">
+
+                <span id="tweetTextOutput">
+		Yo no voy a ser candidato a NADA!!!.. Ese tal Nenencho que se presentó a estas elecciones es un CLON de HC Innovations y yo estoy congelado en un refrigerador de Farmacenter.
+		</span>
+		<img id="f" class="mt-4" src="https://i.guim.co.uk/img/media/e15f807f3160154f3d6f5a78a0be14db1de943bd/0_64_2310_1386/master/2310.jpg?width=1200&quality=85&auto=format&fit=max&s=15d745a0fa9f8414a3721cdab48bed80" />
+		<br/>
+	</div>
+</div>
+
+
+</body>
+</html>
